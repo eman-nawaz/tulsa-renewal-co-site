@@ -1,0 +1,263 @@
+<!-- gallery page - shows renovated homes from team, airbnb/zillow listings, map of locations -->
+
+<!doctype html>
+<html lang="en">
+    <div class="wrapper">
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Maps API Key: AIzaSyBDqRPlqcUnkaejaHt5otcEtPAbWlsUfcM -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDqRPlqcUnkaejaHt5otcEtPAbWlsUfcM&callback=initialize"></script>
+      <title>trco. | gallery</title>
+
+      
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        .column {
+            float: center;
+            width: 50%;
+            padding: 10px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image {
+            opacity: 1;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            display: block;
+            border: 10px solid #aba885;
+            border-radius: 5px;
+        }
+
+        .column:hover{
+            transition: 0.5s;
+            opacity: 0.4;
+        }
+
+        .column p {
+            text-align: center;
+        }
+
+        .image-text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #e3e3d8;
+            font-size: 45px;
+        }
+
+        .image-container {
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+        
+        .image-container a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image-container img {
+            width: 100%;
+            
+        }
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+
+       
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        
+        <!-- main section -->
+        <main class="body">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <div>
+                <h1 class="josefin-sans-section" style="padding-top: 50px;">Our Renovations</h1>
+                <p class="josefin-sans-sub" style="text-align: center; width: 800px; margin: auto;">
+                        Quality, precision, and design come together in our renovations.
+                        Take a look at our past projects and imagine what we can do for you!</p>
+            </div>
+            
+            <!-- showing renovated property thumbnails, click on thumbnail to reveal full info page -->
+            <div class="row" style="display: flex; justify-content: center; gap: 20px; padding-top: 50px;">
+                <div class="column">
+                    <div class="image-container">
+                        <a href="midtown-manor.html">
+                            <img src="https://i.ibb.co/847rV7RG/front-exterior.png" 
+                                alt="The Midtown Manor" style="width:100%;" class="image">
+                            <p class="image-text josefin-sans-section">The Midtown Manor</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="image-container">
+                        <a href="rose-cottage.html">
+                            <img src="https://i.ibb.co/HTzm6DxG/Kitchen8.jpg" 
+                                alt="The Rosé Cottage" style="width:100%" class="image">
+                            <p class="image-text josefin-sans-section">The Rosé Cottage</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="image-container">
+                        <a href="grove-getaway.html">
+                            <img src="https://i.ibb.co/0VzKL9nt/Living-room.png" 
+                                alt="The Grove Getaway" style="width:100%" class="image">
+                            <p class="image-text josefin-sans-section">The Grove Getaway</p>
+                        </a>
+                    </div>
+                </div>
+              </div>
+
+
+              <!-- google map showing locations of property renovations -->
+            <div id="map" style="padding-top: 100px;">
+                <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1k7tNlEvbk32XqVrOeynOMEqxv2Fq3qY&ehbc=2E312F&noprof=1" width="1440" height="480"></iframe>
+            </div>
+            
+        </main>
+
+        <!-- footer section -->
+        <div class="footer-section" style="padding-top: 100px;">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+            <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+            <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+            
+            <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>
+        </div>
+
+    </body>
+    </div>
+</html>

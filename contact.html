@@ -1,0 +1,304 @@
+<!-- contact page - full page form for selling properties/project quotes -->
+
+<!doctype html>
+<html lang="en">
+    <div class="wrapper">
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+
+      <title>trco. | contact</title>
+
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        #contact-form {
+            background-color: #aba88528; 
+            padding: 30px;  
+            border-radius: 30px;  
+        }
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+
+       
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        <hr style="background-color:#aba885; height:10px; border:none;">
+        <!-- main section -->
+        <main>
+            <h1 class="josefin-sans-section" style="padding-top: 50px; text-align: center;">take your first step</h1>
+            <p class="josefin-sans-sub" style="text-align: center; width: 800px; margin: auto; padding-bottom: 50px;">the journey to starting your next renovation project begins with a free consultation!<br><br>
+            whether you're on the quest to <i>sell your property</i> or you're in the market</i> for a newly renovated home,<br><br><b>we would love to get in contact with you!</b></p>
+
+            <!-- contact input form -->
+            <form class="josefin-sans-sub" id="contact-form" style="text-align: center;">
+
+                <!-- name -->
+                <h2 class="josefin-sans-section" style="font-size: 18px; color:#aba885">your name</span></h2>
+                <div>
+                    <label for="fname">first name <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="fname" name="fname" required
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:400px;">
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="lname">last name <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="lname" name="lname" required
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:400px;">
+                    <br><br>
+                </div>
+
+                <!-- contact info -->
+                <h2 class="josefin-sans-section" style="font-size: 18px; color:#aba885">your contact info</span></h2>
+                <div>
+                    <label for="email">email <span style="font-size:16px;">(required)</span></label><br>  
+                    <input type="email" id="email" name="email" required 
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:300px;">
+                    <br><br>
+                </div>
+                
+                <div>
+                    <label for="number">phone number</label><br>
+                    <input type="tel" id="number" name="number"
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:200px;">
+                    <br><br>
+                </div>
+
+                <!-- address info -->
+                <h2 class="josefin-sans-section" style="font-size: 18px; color:#aba885">your address</span></h2>
+                <div>
+                    <label for="address1">address line 1 <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="address1" name="address1" required
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:500px;">
+                    <br><br>
+                </div>
+                
+                <div>
+                    <label for="address2">address line 2</label><br>
+                    <input type="text" id="address2" name="address2"
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:500px;">
+                    <br><br>
+                </div>
+
+                <div>
+                    <label for="city">city <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="city" name="city"
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:300px;">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="state">state <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="state" name="state"
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:300px;">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="zip">zip code <span style="font-size:16px;">(required)</span></label><br>
+                    <input type="text" id="zip" name="zip"
+                    style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:300px;">
+                    <br><br>
+                </div>
+
+                <!-- project/property info -->
+                <h2 class="josefin-sans-section" style="font-size: 18px; color:#aba885">property/project info</span></h2>
+                 <div>
+                    <label for="info">tell us about your project or the property you're wanting to sell!</label><br>
+                    <textarea id="info" name="info" style="padding: 10px 10px; border-radius: 30px; border-style: hidden; font-size: 16px; width:1000px; height: 100px; text-align: left;"></textarea>
+                    <br><br>
+                 </div>
+
+                <button class="button" style="width: 200px; height: 60px;">submit</button>
+            </form>
+
+            <!-- script code to load contact form data to firestore -->
+            <script type="module">
+                // Import Firebase SDK
+                import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+                import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+            
+                // Your Firebase configuration (Replace with your actual config)
+                const firebaseConfig = {
+                    apiKey: "AIzaSyASc3etaKDMRoCqxB16NjztzaeFm_LcRfI",
+                    authDomain: "spring-25-capstone.firebaseapp.com",
+                    projectId: "spring-25-capstone",
+                    storageBucket: "spring-25-capstone.firebasestorage.app",
+                    messagingSenderId: "140091202007",
+                    appId: "1:140091202007:web:0fb32e15c891b70c175392",
+                    measurementId: "G-SFD1STFF04"
+                };
+            
+                // Initialize Firebase
+                const app = initializeApp(firebaseConfig);
+                const db = getFirestore(app);
+            
+                // Handle Form Submission
+                document.getElementById("contact-form").addEventListener("submit", async function (event) {
+                event.preventDefault(); // Prevent page refresh
+            
+                // Collect form data
+                const formData = {
+                    firstName: document.getElementById("fname").value.trim(),
+                    lastName: document.getElementById("lname").value.trim(),
+                    email: document.getElementById("email").value.trim(),
+                    phone: document.getElementById("number").value.trim(),
+                    address1: document.getElementById("address1").value.trim(),
+                    address2: document.getElementById("address2").value.trim(),
+                    city: document.getElementById("city").value.trim(),
+                    state: document.getElementById("state").value.trim(),
+                    zip: document.getElementById("zip").value.trim(),
+                    info: document.getElementById("info").value.trim(),
+                    timestamp: new Date()
+                };
+            
+                // Validate required fields
+                if (!formData.firstName || !formData.lastName || !formData.email || !formData.city || !formData.state || !formData.zip) {
+                    alert("Please fill in all required fields!");
+                    return;
+                }
+            
+                try {
+                    // Add form data to Firestore
+                    await addDoc(collection(db, "contact_submissions"), formData);
+                    alert("Your form has been submitted successfully!");
+                    document.getElementById("contact-form").reset(); // Clear the form
+                } catch (error) {
+                    console.error("error submitting form:", error);
+                    alert("Submission failed. Please try again." + error.message);
+                }
+                });
+            </script>
+        </main>
+
+        <!-- footer section -->
+        <div class="footer-section" style="padding-top: 100px;">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+            <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+                <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+            
+            <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>
+        </div>
+
+    </body>
+    </div>
+</html>

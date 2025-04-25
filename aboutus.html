@@ -1,0 +1,268 @@
+<!-- about us page - highlights team behind company & credentials/location/contact info -->
+
+<!doctype html>
+<html lang="en">
+    <div class="wrapper">
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>trco. | about us</title>
+
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+  
+        .team-card {
+            font-family: "Josefin Sans";
+            background-color: #c6c29782;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+
+        .team-card:hover {
+            background-color: #aba885; 
+        }
+
+        .team-photo {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-name {
+            font-family: "Josefin Sans";
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+
+        .team-title {
+            font-family: "Josefin Sans";
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .team-bio {
+            font-family: "Josefin Sans";
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .team-contact {
+            font-family: "Josefin Sans";
+            font-size: 0.9rem;
+            color: #333;
+        }
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+
+       
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        
+        <!-- main section -->
+        <main class="body">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <h1 class="josefin-sans-section" style="padding-top: 50px; text-align: center;">meet the team</h1>
+            <p class="josefin-sans-sub" style="text-align: center; width: 800px; margin: auto; padding-bottom: 50px;">
+                Every project starts with a hardworking crew behind it. Meet the team that turns ideas into reality
+                 — from design to demo and every detail in between.
+            </p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                <img src="images/AQ Profile.png" class="team-photo">
+                <h2 class="team-name">Amna Quraishi</h2>
+                <p class="team-title">Lead Designer & Investor</p>
+                <p class="team-bio">Amna blends creative vision with market strategy to 
+                                    guide each project from concept to completion. Her design
+                                     expertise and investment insight shape homes that stand out and sell.
+                </p>
+                <a href="mailto:amna.trco@gmail.com" style="text-decoration: none; color: #000;"><p class="team-contact">📧 amna.trco@gmail.com</p></a>
+                </div>
+
+                <div class="team-card">
+                <img src="images/DS.png" class="team-photo">
+                <h2 class="team-name">Dara Sadjadi</h2>
+                <p class="team-title">Licensed Electrician</p>
+                <p class="team-bio">With over a decade of electrical experience, Dara ensures
+                                     every project is powered safely, efficiently, and up to code
+                                      — keeping functionality and reliability top of mind.
+                </p>
+                <a href="mailto:dara.trco@gmail.com" style="text-decoration: none; color: #000;"><p class="team-contact">📧 dara.trco@gmail.com</p></a>
+                </div>
+        
+                <div class="team-card">
+                <img src="images/KE.png" class="team-photo">
+                <h2 class="team-name">Karlos Eubanks</h2>
+                <p class="team-title">Licensed Plumber</p>
+                <p class="team-bio">Karlos brings 7 years of hands-on plumbing experience to the team,
+                                     delivering quality systems that support every renovation from the inside out.
+                </p>
+                <a href="mailto:karlous.trco@gmail.com" style="text-decoration: none; color: #000;"><p class="team-contact">📧 karlous.trco@gmail.com</p></a>
+                </div>
+           
+                <div class="team-card">
+                <img src="images/RH.png" class="team-photo">
+                <h2 class="team-name">Ronnie Hill</h2>
+                <p class="team-title">Licensed HVAC Technician</p>
+                <p class="team-bio">With 16 years in HVAC, Ronnie designs and installs heating and
+                                     cooling systems that make every renovated space feel as good as it looks
+                                      — all year round.
+                </p>
+                <a href="mailto:ronnie.trco@gmail.com" style="text-decoration: none; color: #000;"><p class="team-contact">📧 ronnie.trco@gmail.com</p></a>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- footer section -->
+        <div class="footer-section" style="padding-top: 100px;">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+            <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+                <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+            
+            <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>
+        </div>
+
+    </body>
+    </div>
+</html>

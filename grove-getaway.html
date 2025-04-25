@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+    
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>trco | grove getaway</title>
+
+    <!-- lightbox for gallery -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+        .image {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        .property-gallery {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card img:hover {
+            transform: scale(1.015);
+            box-shadow: 0 6px 30px #61604f;
+            cursor: pointer;
+        }
+
+        /* Custom Lightbox Overlay Background */
+        .glightbox-clean .goverlay {
+            background-color: #F3F3F0 !important;
+            opacity: 0.8;
+        }
+
+        .glightbox-container .glightbox-overlay {
+            background-color: #C6C297 !important;
+        }
+
+        /* Lightbox image container */
+        .glightbox-container .gslide-image img {
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px #aba885 !important;
+            transition: transform 1s ease, opacity 0.5s ease;
+        }
+
+        /* Zoom effect */
+        .glightbox-container .gslide-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Close button */
+        .glightbox-container .gclose {
+            background-color: #aba885 !important;
+            border-radius: 50%;
+            padding: 10px;
+            color: #ffffff;
+            font-size: 30px;
+        }
+
+        .glightbox-container .gclose:hover {
+            background-color: #C6C297;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Navigation arrows */
+        .glightbox-container .gnext,
+        .glightbox-container .gprev {
+            background-color: #C6C297 !important;
+            border-radius: 50%;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .glightbox-container .gnext:hover,
+        .glightbox-container .gprev:hover {
+            background-color: #C6C297;
+            transition: background-color 0.3s ease;
+        }
+
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+    <div class="wrapper">
+       
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        
+        <!-- main section -->
+        <main class="body">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+
+            <a href="Gallery.html" class="josefin-sans-sub" style="text-decoration: none; padding-top: 50px;">← back to gallery</a>
+
+            <p class="josefin-sans-section" style="padding-top: 50px;">grove getaway</p>
+            <p class="josefin-sans-sub" style="text-align: left; width: 900px; margin: auto;">
+                This renovated lake house blends comfort and coastal charm with thoughtful updates throughout. 
+                Nautical touches like sea-themed décor and anchor accessories create a fun, relaxed vibe. 
+                The open-concept kitchen and living area feature fresh paint, stylish new flooring, and updated
+                 light fixtures that brighten the space. Step out onto the back deck to enjoy peaceful lake views,
+                  or stay inside and enjoy the arcade games for a touch of retro entertainment. 
+                <br><br>
+                 This home is the perfect mix of modern comfort and lakeside fun. Scroll through the photos to see the transformation!
+            </p>
+
+            <!-- midtown manor image gallery -->
+            <section class="property-gallery">
+                <div class="gallery-grid">
+
+                    <div class="gallery-card">
+                    <a href="property images/grove getaway/Living-room.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/grove getaway/Living-room.avif" alt="Living room">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Living-room2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Living-room2.avif" alt="Living room 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Kitchen.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Kitchen.avif" alt="Kitchen">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Kitchen2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Kitchen2.avif" alt="Kitchen 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Dining.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Dining.avif" alt="Dining room">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Bed1.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Bed1.avif" alt="Bedroom 1">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Bath2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Bath2.avif" alt="Bathroom 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Bed3.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Bed3.avif" alt="Bedroom 3">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Bed2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Bed2.avif" alt="Bedroom 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Bath1.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Bath1.avif" alt="Bathroom 1">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/grove getaway/Balcony.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/grove getaway/Balcony.avif" alt="Balcony">
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <div class="footer-section" style="padding-top: 100px;">
+                <hr style="background-color:#aba885; height:10px; border:none;">
+                <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+                <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+                    <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+                
+                <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                    <li><a href="AboutUs.html"><b>about us</b></a></li>
+                    <li><a href="Services.html"><b>services</b></a></li>
+                    <li><a href="Gallery.html"><b>gallery</b></a></li>
+                    <li><a href="Contact.html"><b>contact</b></a> </li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+        <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            zoomable: true
+        });
+        </script>
+
+    </body>
+</html>

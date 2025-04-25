@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+    
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>trco | rosé cottage</title>
+
+    <!-- lightbox for gallery -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+        .image {
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        .property-gallery {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card img:hover {
+            transform: scale(1.015);
+            box-shadow: 0 6px 30px #61604f;
+            cursor: pointer;
+        }
+
+        /* Custom Lightbox Overlay Background */
+        .glightbox-clean .goverlay {
+            background-color: #F3F3F0 !important;
+            opacity: 0.8;
+        }
+
+        .glightbox-container .glightbox-overlay {
+            background-color: #C6C297 !important;
+        }
+
+        /* Lightbox image container */
+        .glightbox-container .gslide-image img {
+            border-radius: 12px !important;
+            box-shadow: 0 4px 20px #aba885 !important;
+            transition: transform 1s ease, opacity 0.5s ease;
+        }
+
+        /* Zoom effect */
+        .glightbox-container .gslide-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Close button */
+        .glightbox-container .gclose {
+            background-color: #aba885 !important;
+            border-radius: 50%;
+            padding: 10px;
+            color: #ffffff;
+            font-size: 30px;
+        }
+
+        .glightbox-container .gclose:hover {
+            background-color: #C6C297;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Navigation arrows */
+        .glightbox-container .gnext,
+        .glightbox-container .gprev {
+            background-color: #C6C297 !important;
+            border-radius: 50%;
+            padding: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        .glightbox-container .gnext:hover,
+        .glightbox-container .gprev:hover {
+            background-color: #C6C297;
+            transition: background-color 0.3s ease;
+        }
+
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+    <div class="wrapper">
+       
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        
+        <!-- main section -->
+        <main class="body">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+
+            <a href="Gallery.html" class="josefin-sans-sub" style="text-decoration: none; padding-top: 50px;">← back to gallery</a>
+
+            <p class="josefin-sans-section" style="padding-top: 50px;">rosé cottage</p>
+            <p class="josefin-sans-sub" style="text-align: left; width: 900px; margin: auto;">
+                    Rosé Cottage is a reimagined charming 1920's home! We thoughtfully renovated the cottage
+                     to celebrate its vintage character while adding a touch of modern whimsy. The standout feature
+                      is a one-of-a-kind pink kitchen, blending playful color with retro-inspired design for a fresh
+                       yet nostalgic feel. original woodwork has been carefully preserved and restored,
+                        showcasing the craftsmanship of the era. Mosaic windows add a splash of color and artistry,
+                         casting warm light across the rooms. 
+                <br><br>
+                Every detail was chosen to honor the home's history while giving it new life, resulting in a space
+                 that feels both timeless and full of personality. Scroll through the photos to see the transformation!
+            </p>
+
+            <!-- midtown manor image gallery -->
+            <section class="property-gallery">
+                <div class="gallery-grid">
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Kitchen.avif" alt="Kitchen 1">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen2.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Kitchen2.avif" alt="Kitchen 2">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen3.avif" class="glightbox" data-gallery="midtown">
+                         <img src="property images/rose cottage/Kitchen3.avif" alt="Kitchen 3">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen4.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Kitchen4.avif" alt="Kitchen 4">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen5.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Kitchen5.avif" alt="Kitchen 5">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Kitchen6.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Kitchen6.avif" alt="Kitchen 6">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Kitchen7.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Kitchen7.avif" alt="Kitchen 7">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Kitchen8.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Kitchen8.avif" alt="Kitchen 8">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Living-room.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Living-room.avif" alt="Living room">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Living-room2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Living-room2.avif" alt="Living room 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Living-room3.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Living-room3.avif" alt="Living room 3">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Living-room4.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Living-room4.avif" alt="Living room 4">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Dining-room.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Dining-room.avif" alt="Dining room">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Dining-room2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Dining-room2.avif" alt="Dining room 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Dining-room3.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Dining-room3.avif" alt="Dining room 3">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                    <a href="property images/rose cottage/Master-bed.avif" class="glightbox" data-gallery="midtown">
+                        <img src="property images/rose cottage/Master-bed.avif" alt="Master bed">
+                    </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Bed2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Bed2.avif" alt="Bedroom 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Bed3.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Bed3.avif" alt="Bedroom 3">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Bath.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Bath.avif" alt="Bathroom">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/ose cottage/Bath2.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Bath2.avif" alt="Bathroom 2">
+                        </a>
+                    </div>
+
+                    <div class="gallery-card">
+                        <a href="property images/rose cottage/Bath4.avif" class="glightbox" data-gallery="midtown">
+                            <img src="property images/rose cottage/Bath4.avif" alt="Bathroom 4">
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <div class="footer-section" style="padding-top: 100px;">
+                <hr style="background-color:#aba885; height:10px; border:none;">
+                <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+                <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+                    <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+                
+                <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                    <li><a href="AboutUs.html"><b>about us</b></a></li>
+                    <li><a href="Services.html"><b>services</b></a></li>
+                    <li><a href="Gallery.html"><b>gallery</b></a></li>
+                    <li><a href="Contact.html"><b>contact</b></a> </li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+        <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            zoomable: true
+        });
+        </script>
+
+    </body>
+</html>

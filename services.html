@@ -1,0 +1,281 @@
+<!-- services page - in-depth review of all services, include form for quotes/properties -->
+
+<!doctype html>
+<html lang="en">
+    <div class="wrapper">
+
+    <!-- head section -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>trco. | services</title>
+
+      <!-- css style -->
+      <style>
+
+        /* imported josefin sans font */
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        .josefin-sans-title {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            line-height: normal;
+            font-size: 30px;
+            letter-spacing: 3.6px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .josefin-sans-section {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            text-align: center;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 5.4px;
+            text-transform: uppercase;
+        }
+
+        .josefin-sans-sub {
+            color: #000;
+            font-family: "Josefin Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            line-height: normal;
+            font-size: 24px;
+            letter-spacing: 3.6px;
+            text-transform: lowercase;
+        } 
+
+        .wrapper {
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .navbar {
+            z-index: 1;
+            width: 100%;
+        }
+        .left-nav {
+            float: left;
+        }
+        .right-nav {
+            float: right;
+            word-spacing: 15px;
+        }
+        .navbar {
+            height: 8.0%;
+            overflow: auto;
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .navbar a:hover {
+            color:#C6C297;
+            transition-duration: .5s;
+        }
+
+
+        .button {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .quote-section {
+            display: inline-block;
+            vertical-align: top;
+            position: static;
+            width: 648px;
+            padding-top: 80px;
+            padding-bottom: 100px;
+        }
+
+        .footer-section {
+            width: 1440px;
+            height: 250px;
+        }
+
+        .panel {
+            display: none;
+            padding: 20px;
+            background-color: #aba88528;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "Josefin Sans";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: 3px;
+            border-radius: 30px;
+            border-style: hidden;
+        }
+
+        .accordion {
+            background-color: #C6C297;
+            border-radius: 30px;
+            border-style: hidden;
+            padding: 10px;
+            text-transform: uppercase;
+            color: #F3F3F0;
+            text-align: center;
+            font-family: "Josefin Sans";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        
+        }
+
+        .accordion:hover {
+            background-color: #aba885;
+            transition-duration: .5s;
+        }
+
+        .accordion:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */
+        }
+      </style>
+    </head>
+
+    <!-- body section -->
+    <body style="background-color: #F3F3F0;">
+
+        <!-- navigation section -->
+        <nav class="navbar"> 
+
+            <ul class="left-nav josefin-sans-title">
+                <li class="title"><a href="index.html">tulsa renewal co.</a></li>
+            </ul>
+            <ul class="right-nav josefin-sans-sub" style="font-size: 30px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>           
+        </nav>
+        
+        <!-- main section -->
+        <main class="body">
+
+            <hr style="background-color:#aba885; height:10px; border:none;">
+
+            <h1 class="josefin-sans-section" style="padding-top: 50px; text-align: center;">what we do</h1>
+            <p class="josefin-sans-sub" style="text-align: center; width: 800px; margin: auto; padding-bottom: 50px;">from full-home remodels to targeted upgrades,
+                 we deliver high-quality renovation services with lasting value.<br><br>we're here to make the process clear and simple.<br> 
+                 browse our services below to see how we can help you!</p>
+
+            <!-- FAQ accordian section -->
+            <button class="accordion" style="width: 100%; padding: 18px;">remodeling & construction</button>
+                <div class="panel">
+                    <p>we handle everything from structural updates to cosmetic improvements. whether it's a full-renovation or a targeted remodel,
+                        our team ensures every detail is executed with quality and efficiency. we hold experience with kitchens, bathrooms, flooring,
+                        exteriors, and more!
+                    </p>
+                </div>
+            
+            <button class="accordion" style="width: 100%; padding: 18px;">interior design & styling</button>
+                <div class="panel">
+                    <p>designing your home is an experience we would love to be a part of! our expert team will help you bring your vision to life -
+                        curating colors, fabrics, fixtures, furnishings and thoughtfully planning every detail to create a space that feels like home. 
+                        we value styling that appeals to today's buyers while staying true to its character.
+                    </p>
+                </div>
+            
+            <button class="accordion" style="width:100%; padding: 18px;">property acquisition & selling</button>
+                <div class="panel">
+                    <p>we help source undervalued properties with potential and guide them through a full transformation - then handle staging and selling
+                         with market-ready polish. whether you're an investor or an owner, we streamline the process from purchase to profitable sale. we're always
+                         looking for our next project - if you have a property you'd like to sell, contact us!
+                    </p>
+                </div>
+
+                <!-- script to open accordions -->
+                <script>
+                    const accordions = document.getElementsByClassName("accordion");
+
+                    for (let i = 0; i < accordions.length; i++) {
+                        accordions[i].addEventListener("click", function() {
+                            const isActive = this.classList.contains("active");
+
+                            /* close all panels */
+                            for(let j = 0; j < accordions.length; j++) {
+                                accordions[j].classList.remove("active");
+                                accordions[j].nextElementSibling.style.display = "none";
+                            }
+
+                            /* reopen clicked panel only if it wasn't already active */
+                            if(!isActive) {
+                                this.classList.add("active");
+                                this.nextElementSibling.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+
+            <!-- free consultation section, link to contact form -->
+            <h1 class="josefin-sans-section" style="padding-top: 50px; text-align: center;">let's talk about your property</h1>
+            <p class="josefin-sans-sub" style="text-align: center; width: 800px; margin: auto; padding-bottom: 50px;">thinking about
+                renovating, selling, or just curious what your property could become? we offer free, no-pressure consultations to walk
+                you through the possibilities.<br><br>whether you're a homeowner, investor, or somewhere in between - we'll help you explore
+                your options and see how we can bring value to your space. 
+            </p>
+            <button onclick="location.href='contact.html'" class="button" style="display: block; margin: 0 auto; height: 50px; width: 500px;">
+                get your free consultation</button>
+
+        </main>
+
+        <!-- footer section -->
+        <div class="footer-section" style="padding-top: 100px;">
+            <hr style="background-color:#aba885; height:10px; border:none;">
+            <p class="josefin-sans-section" style="float: left;">tulsa renewal co.</p>
+            <p class="josefin-sans-sub" style="float: right; text-align: right;">(918) 805-4574<br>
+                <a href="mailto:tulsarenewalco@gmail.com" style="text-decoration: none; color: #000;">tulsarenewalco@gmail.com</a></p>
+            
+            <ul class="josefin-sans-sub navbar" style="display:block; text-align:center; word-spacing:20px;">
+                <li><a href="AboutUs.html"><b>about us</b></a></li>
+                <li><a href="Services.html"><b>services</b></a></li>
+                <li><a href="Gallery.html"><b>gallery</b></a></li>
+                <li><a href="Contact.html"><b>contact</b></a> </li>
+            </ul>
+        </div>
+
+    </body>
+    </div>
+</html>
