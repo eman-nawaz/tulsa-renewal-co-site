@@ -4,6 +4,25 @@ This repository contains a responsive, multi-page website developed for **Tulsa 
 
 ---
 
+## Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Requirements](#-requirements)
+  - [Functional Requirements](#functional-requirements)
+  - [Non-Functional Requirements](#non-functional-requirements)
+- [Integration Overview](#-integration-overview)
+- [Modeling](#-modeling)
+- [Source Files](#-source-files)
+- [View the Live Website](#-view-the-live-website)
+- [How to Run the Project Locally](#-how-to-run-the-project-locally)
+- [Testing](#-testing)
+- [Acceptance Criteria](#-acceptance-criteria)
+- [Project Lead](#-project-lead)
+- [Project Structure](#-project-structure)
+- [Conclusion](#-conclusion)
+
+---
+
 ## Project Overview
 
 Tulsa Renewal Co. focuses on property renovation and real estate investment. The goal of this website was to establish a central online location where the company could:
@@ -65,11 +84,9 @@ These markers provide users with visual context for the business's projects.
 The `/modeling` folder includes the following UML diagrams:
 
 - Use Case Diagram
-- Class Diagram
-- Activity Diagram
 - Entity Relationship Diagram
 
-These diagrams were created in draw.io to visualize the system's structure and interactions.
+These diagrams were created to visualize the system's structure and interactions.
 
 ---
 
@@ -89,11 +106,18 @@ All files needed to install, run, and modify the website are included:
 
 ---
 
+## View the Live Website 
+
+Visit the live version of the Tulsa Renewal Co. website here: 
+[https://eman-nawaz.github.io/tulsa-renewal-website](https://eman-nawaz.github.io/tulsa-renewal-website)
+
+---
+
 ## How to Run the Project Locally
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tulsa-renewal-co-site.git
+   git clone https://github.com/eman-nawaz/tulsa-renewal-co-site.git
    ```
 
 2. Navigate to the project folder:
