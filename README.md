@@ -67,7 +67,7 @@ This website was built using HTML, CSS, and JavaScript with Firebase Firestore f
 - **Contact Form**: Stores user-submitted name, email, phone, address, message to the `contact_submissions` collection with timestamps
 - **Newsletter Sign-Up**: Stores email addresses to the `subscribers` collection with timestamps
 
-### 🗘️ Google Maps
+### Google Maps
 
 A customized Google Map is embedded into the gallery page to display the geographic locations of:
 
