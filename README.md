@@ -176,35 +176,6 @@ Web Developer | Designer | Content Writer | QA Tester
 
 ---
 
-## Project Structure
-
-```
-.
-├── index.html
-├── aboutus.html
-├── services.html
-├── gallery.html
-├── contact.html
-├── midtown-manor.html
-├── rose-cottage.html
-├── grove-getaway.html
-├── index.js
-├── firebaseImport.js
-├── style.css
-├── /images/
-│   ├── midtown-manor/
-│   ├── rose-cottage/
-│   └── grove-getaway/
-├── /modeling/
-│   ├── use-case-diagram.png
-│   ├── class-diagram.png
-│   ├── activity-diagram.png
-│   └── erd.png
-└── README.md
-```
-
----
-
 ## Conclusion
 
 This website provides a strong foundation for Tulsa Renewal Co.'s digital presence. It serves as a strategic tool for showcasing renovation work, collecting client leads, and increasing visibility as the company continues to grow.
