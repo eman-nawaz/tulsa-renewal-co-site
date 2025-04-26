@@ -6,20 +6,20 @@ This repository contains a responsive, multi-page website developed for **Tulsa 
 
 ## Table of Contents
 
-- [Project Overview](#-project-overview)
-- [Requirements](#-requirements)
+- [Project Overview](#project-overview)
+- [Requirements](#requirements)
   - [Functional Requirements](#functional-requirements)
   - [Non-Functional Requirements](#non-functional-requirements)
-- [Integration Overview](#-integration-overview)
-- [Modeling](#-modeling)
-- [Source Files](#-source-files)
-- [View the Live Website](#-view-the-live-website)
-- [How to Run the Project Locally](#-how-to-run-the-project-locally)
-- [Testing](#-testing)
-- [Acceptance Criteria](#-acceptance-criteria)
-- [Project Lead](#-project-lead)
-- [Project Structure](#-project-structure)
-- [Conclusion](#-conclusion)
+- [Integration Overview](#integration-overview)
+- [Modeling](#modeling)
+- [Source Files](#source-files)
+- [View the Live Website](#view-the-live-website)
+- [How to Run the Project Locally](#how-to-run-the-project-locally)
+- [Testing](#testing)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Project Lead](#project-lead)
+- [Project Structure](#project-structure)
+- [Conclusion](#conclusion)
 
 ---
 
