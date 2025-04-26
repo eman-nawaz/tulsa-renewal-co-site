@@ -109,7 +109,7 @@ All files needed to install, run, and modify the website are included:
 ## View the Live Website 
 
 Visit the live version of the Tulsa Renewal Co. website here: 
-[https://eman-nawaz.github.io/tulsa-renewal-website](https://eman-nawaz.github.io/tulsa-renewal-website)
+[https://eman-nawaz.github.io/tulsa-renewal-co-site](https://eman-nawaz.github.io/tulsa-renewal-co-site)
 
 ---
 
