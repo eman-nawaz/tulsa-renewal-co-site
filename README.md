@@ -1,6 +1,6 @@
 # Tulsa Renewal Co. Website – Capstone Project
 
-This repository contains a responsive, multi-page website developed for **Tulsa Renewal Co.**, a newly established real estate and renovation business based in Tulsa, Oklahoma. The site provides a professional digital presence for the company as it begins branding and connecting with clients. This capstone project showcases the development of a full web solution tailored to meet the business’s practical needs and growth potential.
+This repository contains a multi-page website developed for **Tulsa Renewal Co.**, a newly established real estate and renovation business based in Tulsa, Oklahoma. The site provides a professional digital presence for the company as it begins branding and connecting with clients. This capstone project showcases the development of a full web solution tailored to meet the business’s practical needs and growth potential.
 
 ---
 
@@ -49,8 +49,8 @@ This website was built using HTML, CSS, and JavaScript with Firebase Firestore f
 
 ### Non-Functional Requirements
 
-- **Portability**: Works across all major browsers (Chrome, Safari, Firefox, Edge)
-- **Maintainability**: Code is modular, well-commented, and organized
+- **Portability**: Works across all major browsers (Chrome, Safari, etc.)
+- **Maintainability**: Code is organized
 - **Reliability**: Validations prevent incomplete form submissions
 - **Error Handling**: User input forms include validation and error messages to guide user correction
 - **Scalability**: New pages and properties can be added easily
